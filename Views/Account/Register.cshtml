@@ -1,0 +1,46 @@
+﻿@model RegisterVM
+@{
+    Layout = null;
+}
+<section id="contact" class="contact">
+    <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+            <h2>Register</h2>
+        </div>
+
+        <div class="col-lg-6">
+            <form method="post">
+                <div asp-validation-summary="ModelOnly"></div>
+                <div class="row">
+                    <div class="col form-group">
+                        <input asp-for="Name"  class="form-control"  placeholder="Name">
+                        <span asp-validation-for="Name"></span>
+                    </div>
+                    <div class="col form-group">
+                        <input asp-for="Surname" class="form-control" placeholder="Email">
+                        <span asp-validation-for="Surname"></span>
+                    </div>
+                    <div class="col form-group">
+                        <input asp-for="UserName" class="form-control" placeholder="UserName">
+                        <span asp-validation-for="UserName"></span>
+                    </div>
+                    <div class="col form-group">
+                        <input asp-for="Email" class="form-control" placeholder="Email">
+                        <span asp-validation-for="Email"></span>
+                    </div>
+                    <div class="col form-group">    
+                        <input asp-for="Password" class="form-control" placeholder="Password">
+                        <span asp-validation-for="Password"></span>
+                    </div>
+                    <div class="col form-group">
+                        <input asp-for="ConfrimPassword" class="form-control" placeholder="ConfrimPassword">
+                        <span asp-validation-for="ConfrimPassword"></span>
+                    </div>
+                </div>
+                <div class="text-center"><button type="submit">Register</button></div>
+            </form>
+        </div>
+    </div>
+    </div>
+</section>
